@@ -1,0 +1,17 @@
+{
+  "name": "nano-react-app-template",
+  "version": "0.1.0",
+  "description": "Hard to get more minimal than this React app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
