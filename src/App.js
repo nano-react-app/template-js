@@ -1,5 +1,9 @@
 import React from "react";
 
+class foo {
+  some = async () => {}
+}
+
 export default () => (
   <>
     <h1>Welcome to React Parcel Micro App!</h1>

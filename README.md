@@ -27,24 +27,8 @@ You can use CSS files with simple ES2015 `import` statements in your Javascript:
 import "./index.css";
 ```
 
-## Using class properties
+## Babel transforms
 
-If you want to use class properties, add the following to `.babelrc` or your `package.json` under the `babel` property:
+The Babel preset [babel-preset-nano-react-app](https://github.com/adrianmcli/babel-preset-nano-react-app) and a small amount of configuration is used to support the same transforms that Create React App supports.
 
-```json
-{
-  "plugins": [["@babel/plugin-proposal-class-properties", { "loose": true }]]
-}
-```
-
-## Using React fragments
-
-If you want to use React fragments, add the following to `.babelrc` or your `package.json` under the `babel` property:
-
-```json
-{
-  "plugins": [
-    ["@babel/plugin-transform-react-jsx", { "pragmaFrag": "React.Fragment" }]
-  ]
-}
-```
+The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
