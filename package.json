@@ -4,7 +4,8 @@
   "description": "Hard to get more minimal than this React app",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url '.'", 
+    "predeploy": "rm -rf dist && parcel build index.html --public-url '.'"    
   },
   "license": "MIT",
   "dependencies": {
