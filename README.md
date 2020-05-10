@@ -21,7 +21,7 @@ parcel index.html -p 3000
 
 ## Adding styles
 
-You can use CSS files with simple ES2015 `import` statements in your Javascript:
+You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
 
 ```js
 import "./index.css";
@@ -37,11 +37,11 @@ The Babel configuration lives inside `package.json` and will override an externa
 ## Deploy to GitHub Pages
 
 You can also deploy your project using GitHub pages.
-First install the gh-pages package:
+First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
 
 `npm i -D gh-pages`
 
-With Parcel's --public-url flag, use the following scripts for deployment:
+With Parcel's `--public-url` flag, use the following scripts for deployment:
 
 ```
 "scripts": {
