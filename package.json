@@ -8,31 +8,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
     "babel-preset-nano-react-app": "^0.1.0",
-    "parcel-bundler": "^1.12.4"
+    "parcel": "^2.0.0-alpha.3.2"
   },
   "babel": {
     "presets": [
       "nano-react-app"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-proposal-class-properties",
-        {
-          "loose": true
-        }
-      ],
-      [
-        "@babel/plugin-transform-react-jsx",
-        {
-          "pragmaFrag": "React.Fragment"
-        }
-      ]
     ]
   }
 }
