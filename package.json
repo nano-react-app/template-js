@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Hard to get more minimal than this React app",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel index.html --no-cache --no-source-maps",
+    "build": "parcel build index.html --no-cache --no-source-maps --out-dir build/"
   },
   "license": "MIT",
   "dependencies": {
@@ -12,8 +12,10 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
     "babel-preset-nano-react-app": "^0.1.0",
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-alpha.3.2",
+    "parcel-bundler": "^1.12.4"
   },
   "babel": {
     "presets": [
