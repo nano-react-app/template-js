@@ -41,13 +41,13 @@ First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
 
 `npm i -D gh-pages`
 
-With Parcel's `--public-url` flag, use the following scripts for deployment:
+Use the following scripts for deployment:
 
 ```
 "scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html --public-url '.'",
-  "predeploy": "rm -rf dist && parcel build index.html --public-url '.'",
+  "start": "vite",
+  "build": "vite build",
+  "predeploy": "rm -rf dist && vite build",
   "deploy": "gh-pages -d dist"
 },
 ```
