@@ -4,7 +4,7 @@
     "description": "Hard to get more minimal than this React app",
     "license": "MIT",
     "scripts": {
-        "start": "vite --port 1234",
+        "start": "vite",
         "build": "vite build"
     },
     "dependencies": {
